@@ -46,7 +46,7 @@ export const combos: ComboOption[] = [
   },
   {
     id: '8',
-    quantity: 1000,
+    quantity: 10000,
     price: 399.90,
     discount: 50
   }
