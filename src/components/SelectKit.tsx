@@ -2,6 +2,7 @@ import { Clock, Users } from "lucide-react";
 import { combos } from "../data/combos";
 import { ComboOption } from "../types";
 import ComboCard from "./ComboCard";
+import CustomComboCard from "./CustomComboCard";
 
 interface SelectKitProps {
   onSelectCombo: (combo: ComboOption) => void;
@@ -88,6 +89,22 @@ export default function SelectKit({ onSelectCombo }: SelectKitProps) {
               onSelect={onSelectCombo}
             />
           ))}
+        </div>
+
+        {/* Custom Combo Section */}
+        <div className="mt-16">
+          <div className="text-center mb-8">
+            <h3 className="text-3xl font-black text-gray-800 mb-4">
+              Ou Crie Seu Combo Personalizado
+            </h3>
+            <p className="text-gray-600 text-lg font-medium">
+              Escolha exatamente quantos bilhetes você quer e pague menos por cada um!
+            </p>
+          </div>
+          
+          <div className="max-w-md mx-auto">
+            <CustomComboCard onSelect={onSelectCombo} />
+          </div>
         </div>
       </div>
     </div>
