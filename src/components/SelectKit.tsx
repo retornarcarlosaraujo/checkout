@@ -16,7 +16,7 @@ export default function SelectKit({ onSelectCombo }: SelectKitProps) {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url(/Screenshot_4.png)",
+            backgroundImage: "url('./Screenshot_4.png')",
           }}
         ></div>
 
